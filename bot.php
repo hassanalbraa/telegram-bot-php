@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully.</br>";
 
-$botToken = ""; // Bot token goes here
+$botToken = "7511090580:AAGVn3ZVCqNLjl0YyEiSNonHf8Ozu9dcsJQ"; // Bot token goes here
 $website  = "https://api.telegram.org/bot" . $botToken;
 
 
@@ -128,7 +128,7 @@ curl_close($chh);
 
 function sendMessage($chatId, $message, $parse)
 {
-    $botToken = ""; // Token goes here
+    $botToken = "7511090580:AAGVn3ZVCqNLjl0YyEiSNonHf8Ozu9dcsJQ"; // Token goes here
     $website  = "https://api.telegram.org/bot" . $botToken . "/";
     $url      = $website . "sendMessage?chat_id=" . $chatId . "&text=" . urlencode($message) . "&parse_mode=" . $parse;
     $ch       = curl_init();
